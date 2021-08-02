@@ -21,7 +21,7 @@ export default (app: Express): void => {
    */
   router.get('/', (_req: Request, res: Response) => {
     res.status(200).json({
-      status: true,
+      status: true, error: none
     });
   });
 
