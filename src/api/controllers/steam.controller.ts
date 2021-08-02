@@ -44,6 +44,10 @@ export default {
       });
       return;
     }
+    res.status(200).json({
+      status: 'I send!',
+    });
+    return;
 
     steamrequest
       .steamMicrotransactionInitWithOneItem(params)
