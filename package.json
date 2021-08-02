@@ -6,6 +6,9 @@
   "directories": {
     "test": "tests"
   },
+  "engines": {
+    "node": "14.x"
+  }
   "scripts": {
     "build": "tsc",
     "build:doc": "apidoc -i src/ -o docs/",
