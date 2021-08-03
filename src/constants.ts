@@ -21,7 +21,7 @@ export default {
    * Steam automatically converts from this currency to the user local currency.
    * But you can change as you please.
    */
-  currency: 'USD',
+  currency: 'usd',
   /**
    * Used
    */

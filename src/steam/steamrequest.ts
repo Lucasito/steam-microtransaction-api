@@ -178,6 +178,7 @@ export default new (class SteamRequest {
           resolve(value.data);
         })
         .catch(err => {
+          console.log('my_error:' + err);
           reject(err);
         });
     });
