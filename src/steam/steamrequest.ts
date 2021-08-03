@@ -165,6 +165,8 @@ export default new (class SteamRequest {
   ): Promise<T> {
     const urlRequested = _url + _interface + '/' + _method + '/v' + _version + '/';
 
+    console.log(urlRequested);
+
     return new Promise<T>((resolve, reject: (val) => void) => {
       axios
         .post<T>(urlRequested, _data, {
