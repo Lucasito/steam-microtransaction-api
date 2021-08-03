@@ -171,7 +171,7 @@ export default new (class SteamRequest {
       axios
         .post<T>(urlRequested, _data, {
           headers: {
-            'Content-type': 'application/x-www-form-urlencoded',
+            'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
           },
         })
         .then((value: AxiosResponse<T>) => {
