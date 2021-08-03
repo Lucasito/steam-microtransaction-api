@@ -30,11 +30,6 @@ export default {
   initPurchase: (req: Request, res: Response): void => {
     const params: ISteamOpenTransaction = <ISteamOpenTransaction>{ ...req.body };
 
-    res.status(200).json({
-      status: 'I send!',
-    });
-    return;
-    
     if (
       !params.appId ||
       !params.category ||
